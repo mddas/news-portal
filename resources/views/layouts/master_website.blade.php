@@ -1,46 +1,19 @@
 <!DOCTYPE html>
 <html>
-
-<!-- Mirrored from sample-news.demo.radiantnepal.com/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 06 Jul 2022 09:09:48 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 <head>
     <title>News Portal Nepal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="/websites/css/style.min.css">
 </head>
 <body>
+@yield('top-adx')
+@yield('header')
+@yield('navbar')
+<!----html---<body>---->
 
 
-<div class="top-adz">
-    <div class="container">
-        <div class="row">
-            <!--<mast head ads>-->
-            <div class="col-md-9">
-                <div class="horizantal-adz">
-                    <a href="https://www.prabhubank.com/" target="_blank" title="">
-                        <img src="images/adz_horizantal_1.gif" alt=""> </a>
-                </div>
-
-                <div class="horizantal-adz">
-                    <a href="https://bit.ly/2XPQBjE" target="_blank" title="">
-                        <img src="images/adz_horizantal_2.gif" alt="">
-                    </a>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <div class="owl-carousel owl-theme vert-slider">
-                    <div class="item"><img src="images/adz_side_1.gif" alt=""/></div>
-                    <div class="item"><img src="images/adz_side_2.gif" alt=""/></div>
-                    <div class="item"><img src="images/adz_side_3.gif" alt=""/></div>
-                    <div class="item"><img src="images/adz_side_1.gif" alt=""/></div>
-                    <div class="item"><img src="images/adz_side_2.gif" alt=""/></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<!----top adz----->
 
 <!--<div class="icon-bar">
 
@@ -58,163 +31,13 @@
 
 </div>-->
 
-<header>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col-md-3 col-sm-12">
-                <div class="logo">
-                    <img src="images/logo.png">
-                </div>
-            </div>
-            <div class="col-lg-9  col-md-4 col-sm-12">
 
-                <div class="horizantal-adz">
-                    <a href="https://www.prabhubank.com/" target="_blank" title="">
-                        <img src="images/adz_horizantal_1.gif" alt=""> </a>
-                </div>
-
-            </div>
-
-        </div>
-    </div>
-    <div class="khabari_topheader">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-sm-6 khabari_topheader_left">
-                    <div class="top_menu_wrapper">
-                        <ul class="hitStore_top_menu">
-                            <li><a href="#"><i class="icofont-calendar"></i> बिहिबार, साउन २९, २०७७</a></li>
-                            <li><a href="#"><i class="icofont-wall-clock"></i> ९ : २६ : ३३ </a></li>
-                        </ul>
-                    </div>
-
-
-                </div>
-                <div class="col-md-6 col-sm-6  khabari_topheader_right">
-
-
-                    <ul class="social-media">
-                        <li>
-                            <a href="#">
-                                <i class="fab fa-facebook"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fab fa-google"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fab fa-pinterest"></i>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </li>
-                    </ul>
-
-                    <ul class="social-media mr-5">
-                        <li>
-                            <a href="#">
-                                <div class="left-icon lang-btn">EN</div>
-                                <strong>English</strong>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="left-icon lang-btn">ने</div>
-                                <strong>नेपाली</strong>
-                            </a>
-                        </li>
-                    </ul>
-
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
-<div class="khabari-nav" id="khabari-nav">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
-                <nav id="site-navigation" class="main-navigation">
-                    <button class="main-menu-toggle" aria-controls="primary-menu" aria-expanded="false"><i
-                                class="fa fa-bars"></i></button>
-
-                    <div class="main-menu-container-collapse">
-                        <ul id="primary-menu" class="menu nav-menu" aria-expanded="false">
-                            <li class="current-menu-item"><a href="index-2.html">मुख्य पृष्ठ</a></li>
-                            <li><a href="category-page.html"> समाचार </a></li>
-                            <li><a href="category-page.html">नविजनेश</a></li>
-                            <li><a href="category-page.html"> समाज </a></li>
-                            <li><a href="category-page.html"> अपराध </a></li>
-                            <li><a href="category-page.html"> विचार </a></li>
-                            <li><a href="category-page.html"> कला </a></li>
-                            <li><a href="category-page.html"> खेलकुद </a></li>
-                            <li><a href="category-page.html"> प्रवास </a></li>
-                            <li><a href="category-page.html"> ब्लग </a></li>
-                            <li><a href="category-page.html"> नेपाली चलचित्र </a></li>
-                            <li><a href="category-page.html"> मनोरन्जन </a></li>
-                            
-                            <!---------start menu and sub menu----->
-                            
-                            
-                             <li>
-                              <a href="#"> विविध  </a>
-                                 <ul>
-                                    <li><a href="#">कला/साहित्य</a></li>
-                                    <li><a href="#">फोटो ग्यालरी</a></li>
-                                    <li><a href="#">नेपाली चलचित्र</a></li>
-                                    <li><a href="#">मनोरञ्जन </a></li>
-                                    <li><a href="#">अपराध</a></li>
-                                </ul>
-                                
-                            </li>
-      
-                            <li>
-                                <a href="#"> स्याङजा डायरीध </a>
-                                <ul>
-                                  <li><a href="#">वालिङ नगरपालिकात्य</a></li>
-                                  <li><a href="#">पुतलीकजार नगरपालिकाालरी</a></li>
-                                  <li><a href="#"> गल्याङ न.पा </a></li>
-                                  <li><a href="#">भिरोकोट न.पा</a></li>
-                                  <li><a href="#">विरुवा गा.पा</a></li>
-                                  <li><a href="#">हरिनास गा.पा</a></li>
-                                  <li><a href="#">कालिगण्डकी गा.पा </a></li>
-                                  <li><a href="#">आधिखोला गा.पा </a></li>
-                                  <li><a href="#">अर्जुन चौापारी गा.पा </a></li>
-                                  <li><a href="#">फेदीखोला गा</a></li>
-                               </ul>
-                            </li>
-                            <!-------end menu sub menu------------>
-
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-        </div>
-    </div>
-</div>
 <!-- content section -->
     <section class="body-horizantal-adz ">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12">
-                    <img src="images/NepalLife-Insurance-NEW_GIF_015_JEEVAN_SAHARA_1100-100.gif">
+                    <img src="/websites/images/NepalLife-Insurance-NEW_GIF_015_JEEVAN_SAHARA_1100-100.gif">
                 </div>
             </div>
         </div>
@@ -227,7 +50,7 @@
                     <a href="page.html">
                         <div class="box">
                             <h2 class="breaking-news-title">नुवाकोटमा आजदेखि ‘लकडाउन’</h2>
-                            <figure><img src="images/a.jpg"></figure>
+                            <figure><img src="/websites/images/a.jpg"></figure>
                             <div class="description"><p>त्रिशूली, २३ साउन ।
                                     नुवाकोटका सबै स्थानीय तहमा कोरोना सङ्क्रमणको जोखिम देखिएसँगै ‘लकडाउन’ सरहको
                                     आवागमनमा रोक र सार्वजनिक सेवा
@@ -250,7 +73,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12">
-                    <img src="images/ime.gif">
+                    <img src="/websites/images/ime.gif">
                 </div>
             </div>
         </div>
@@ -263,7 +86,7 @@
                     <a href="page.html">
                         <div class="box">
 
-                            <figure><img src="images/a.jpg"></figure>
+                            <figure><img src="/websites/images/a.jpg"></figure>
                             <h3 class="title">टिचिङ अस्पताल महाराजगन्जको आकस्मिक कक्षका दुई जना डाक्टरलाई कोरोना
                                 संक्रमण</h3>
                         </div>
@@ -273,7 +96,7 @@
                     <a href="page.html">
                         <div class="box">
 
-                            <figure><img src="images/a.jpg"></figure>
+                            <figure><img src="/websites/images/a.jpg"></figure>
                             <h3 class="title">सर्वोच्च अदालतका दुई न्यायाधीश सेल्फ-आइसोलेसनमा</h3>
                         </div>
                     </a>
@@ -282,7 +105,7 @@
                     <a href="page.html">
                         <div class="box">
 
-                            <figure><img src="images/a.jpg"></figure>
+                            <figure><img src="/websites/images/a.jpg"></figure>
                             <h3 class="title">कसैसँग मोलाहिजा नगर्ने पत्रकार</h3>
                         </div>
                     </a>
@@ -311,7 +134,7 @@
                                 <div class="col-md-7 col-sm-12">
                                     <div class="main-news-list">
                                         <a href="page.html">
-                                            <figure><img src="images/news-4.jpg" alt=""></figure>
+                                            <figure><img src="/websites/images/news-4.jpg" alt=""></figure>
                                             <div class="abs-title">
 
                                                 <h3 class="title">टिचिङ अस्पताल महाराजगन्जको आकस्मिक कक्षका दुई जना
@@ -322,7 +145,7 @@
                                     </div>
                                     <div class="normal-news-list">
                                         <a href="page.html">
-                                            <figure><img src="images/news-1.jpg" alt=""></figure>
+                                            <figure><img src="/websites/images/news-1.jpg" alt=""></figure>
                                             <div class="abs-title">
                                                 <h3 class="title">पर्सा र बारामा थप ३५ जनामा कोरोना संक्रमण पुष्टि</h3>
                                             </div>
@@ -334,7 +157,7 @@
                                 <div class="col-md-5 col-sm-12 ">
                                     <div class="normal-news-list">
                                         <a href="page.html">
-                                            <figure><img src="images/news-1.jpg" alt=""></figure>
+                                            <figure><img src="/websites/images/news-1.jpg" alt=""></figure>
                                             <div class="abs-title">
                                                 <h3 class="title">पर्सा र बारामा थप ३५ जनामा कोरोना संक्रमण पुष्टि</h3>
                                             </div>
@@ -343,7 +166,7 @@
                                     </div>
                                     <div class="normal-news-list">
                                         <a href="page.html">
-                                            <figure><img src="images/news-2.jpg" alt=""></figure>
+                                            <figure><img src="/websites/images/news-2.jpg" alt=""></figure>
                                             <div class="abs-title">
                                                 <h3 class="title">कमजोर मुद्दा पेश भएपछि अवैध मिर्गौला प्रत्यारोपण गर्ने
                                                     गिरोहलाई हाइसञ्चो</h3>
@@ -353,7 +176,7 @@
                                     </div>
                                     <div class="normal-news-list">
                                         <a href="page.html">
-                                            <figure><img src="images/news-3.jpg" alt=""></figure>
+                                            <figure><img src="/websites/images/news-3.jpg" alt=""></figure>
                                             <div class="abs-title">
                                                 <h3 class="title">युएईमा पाँच महिनामा ११० नेपालीको मृत्यु</h3>
                                             </div>
@@ -362,7 +185,7 @@
                                     </div>
                                     <div class="normal-news-list">
                                         <a href="page.html">
-                                            <figure><img src="images/news-1.jpg" alt=""></figure>
+                                            <figure><img src="/websites/images/news-1.jpg" alt=""></figure>
                                             <div class="abs-title">
                                                 <h3 class="title">युएईमा पाँच महिनामा ११० नेपालीको मृत्यु</h3>
                                             </div>
@@ -389,7 +212,7 @@
                                 <div class="col-md-12">
                                     <div class="main-news-list">
                                         <a href="page.html">
-                                            <figure><img src="images/news-1.jpg" alt=""></figure>
+                                            <figure><img src="/websites/images/news-1.jpg" alt=""></figure>
                                             <div class="abs-title">
                                                 <h3 class="title">पर्सा र बारामा थप ३५ जनामा कोरोना संक्रमण पुष्टि</h3>
                                                 <p>त्रिशूली, २३ साउन ।
@@ -411,7 +234,7 @@
                                 <div class="col-md-4 col-sm-12 ">
                                     <div class="normal-news-list">
                                         <a href="page.html">
-                                            <figure><img src="images/news-1.jpg" alt=""></figure>
+                                            <figure><img src="/websites/images/news-1.jpg" alt=""></figure>
                                             <div class="abs-title">
                                                 <h3 class="title">पर्सा र बारामा थप ३५ जनामा कोरोना संक्रमण पुष्टि</h3>
                                             </div>
@@ -422,7 +245,7 @@
                                 <div class="col-md-4 col-sm-12 ">
                                     <div class="normal-news-list">
                                         <a href="page.html">
-                                            <figure><img src="images/news-1.jpg" alt=""></figure>
+                                            <figure><img src="/websites/images/news-1.jpg" alt=""></figure>
                                             <div class="abs-title">
                                                 <h3 class="title">पर्सा र बारामा थप ३५ जनामा कोरोना संक्रमण पुष्टि</h3>
                                             </div>
@@ -433,7 +256,7 @@
                                 <div class="col-md-4 col-sm-12 ">
                                     <div class="normal-news-list">
                                         <a href="page.html">
-                                            <figure><img src="images/news-1.jpg" alt=""></figure>
+                                            <figure><img src="/websites/images/news-1.jpg" alt=""></figure>
                                             <div class="abs-title">
                                                 <h3 class="title">पर्सा र बारामा थप ३५ जनामा कोरोना संक्रमण पुष्टि</h3>
                                             </div>
@@ -447,7 +270,7 @@
                     </div>
                     <!--------------------------- adz------------------------------------>
                     <div class="body-horizantal-adz ">
-                        <img src="images/ime.gif">
+                        <img src="/websites/images/ime.gif">
                     </div>
                     <!-------------------------------------- new  Section of news-------------------------------->
                     <div class="category-style-three">
@@ -463,7 +286,7 @@
                                 <div class="col-md-4 col-sm-12 ">
                                     <div class="normal-news-list">
                                         <a href="page.html">
-                                            <figure><img src="images/news-1.jpg" alt=""></figure>
+                                            <figure><img src="/websites/images/news-1.jpg" alt=""></figure>
                                             <div class="abs-title">
                                                 <h3 class="title">पर्सा र बारामा थप ३५ जनामा कोरोना संक्रमण पुष्टि</h3>
                                             </div>
@@ -510,7 +333,7 @@
                                 <div class="col-md-4 col-sm-12 ">
                                     <div class="normal-news-list">
                                         <a href="page.html">
-                                            <figure><img src="images/news-1.jpg" alt=""></figure>
+                                            <figure><img src="/websites/images/news-1.jpg" alt=""></figure>
                                             <div class="abs-title">
                                                 <h3 class="title">पर्सा र बारामा थप ३५ जनामा कोरोना संक्रमण पुष्टि</h3>
                                             </div>
@@ -557,7 +380,7 @@
                                 <div class="col-md-4 col-sm-12 ">
                                     <div class="normal-news-list">
                                         <a href="page.html">
-                                            <figure><img src="images/news-1.jpg" alt=""></figure>
+                                            <figure><img src="/websites/images/news-1.jpg" alt=""></figure>
                                             <div class="abs-title">
                                                 <h3 class="title">पर्सा र बारामा थप ३५ जनामा कोरोना संक्रमण पुष्टि</h3>
                                             </div>
@@ -620,7 +443,7 @@
                                 <div class="col-md-12">
                                     <div class="main-news-list">
                                         <a href="page.html">
-                                            <figure><img src="images/news-1.jpg" alt=""></figure>
+                                            <figure><img src="/websites/images/news-1.jpg" alt=""></figure>
                                             <div class="abs-title">
                                                 <h3 class="title">पर्सा र बारामा थप ३५ जनामा कोरोना संक्रमण पुष्टि</h3>
                                                 <p>त्रिशूली, २३ साउन ।
@@ -642,7 +465,7 @@
                                 <div class="col-md-4 col-sm-12 ">
                                     <div class="normal-news-list">
                                         <a href="page.html">
-                                            <figure><img src="images/news-1.jpg" alt=""></figure>
+                                            <figure><img src="/websites/images/news-1.jpg" alt=""></figure>
                                             <div class="abs-title">
                                                 <h3 class="title">पर्सा र बारामा थप ३५ जनामा कोरोना संक्रमण पुष्टि</h3>
                                             </div>
@@ -653,7 +476,7 @@
                                 <div class="col-md-4 col-sm-12 ">
                                     <div class="normal-news-list">
                                         <a href="page.html">
-                                            <figure><img src="images/news-1.jpg" alt=""></figure>
+                                            <figure><img src="/websites/images/news-1.jpg" alt=""></figure>
                                             <div class="abs-title">
                                                 <h3 class="title">पर्सा र बारामा थप ३५ जनामा कोरोना संक्रमण पुष्टि</h3>
                                             </div>
@@ -664,7 +487,7 @@
                                 <div class="col-md-4 col-sm-12 ">
                                     <div class="normal-news-list">
                                         <a href="page.html">
-                                            <figure><img src="images/news-1.jpg" alt=""></figure>
+                                            <figure><img src="/websites/images/news-1.jpg" alt=""></figure>
                                             <div class="abs-title">
                                                 <h3 class="title">पर्सा र बारामा थप ३५ जनामा कोरोना संक्रमण पुष्टि</h3>
                                             </div>
@@ -679,7 +502,7 @@
 
                     <!--------------------------- adz------------------------------------>
                     <div class="body-horizantal-adz ">
-                        <img src="images/ime.gif">
+                        <img src="/websites/images/ime.gif">
                     </div>
                     <!-------------------------------------- new  Section of news-------------------------------->
                     <div class="category-style-four">
@@ -697,7 +520,7 @@
                                         <div class="col-md-12">
                                             <div class="main-news-list">
                                                 <a href="page.html">
-                                                    <figure><img src="images/news-1.jpg" alt=""></figure>
+                                                    <figure><img src="/websites/images/news-1.jpg" alt=""></figure>
                                                     <div class="abs-title">
                                                         <h3 class="title">पर्सा र बारामा थप ३५ जनामा कोरोना संक्रमण
                                                             पुष्टि</h3>
@@ -709,7 +532,7 @@
                                         <div class="col-md-4 col-sm-12 ">
                                             <div class="main-news-list">
                                                 <a href="page.html">
-                                                    <figure><img src="images/news-1.jpg" alt=""></figure>
+                                                    <figure><img src="/websites/images/news-1.jpg" alt=""></figure>
                                                     <div class="abs-title">
                                                         <h3 class="title">पर्सा र बारामा थप ३५ जनामा कोरोना संक्रमण
                                                             पुष्टि</h3>
@@ -721,7 +544,7 @@
                                         <div class="col-md-4 col-sm-12 ">
                                             <div class="main-news-list">
                                                 <a href="page.html">
-                                                    <figure><img src="images/news-1.jpg" alt=""></figure>
+                                                    <figure><img src="/websites/images/news-1.jpg" alt=""></figure>
                                                     <div class="abs-title">
                                                         <h3 class="title">पर्सा र बारामा थप ३५ जनामा कोरोना संक्रमण
                                                             पुष्टि</h3>
@@ -733,7 +556,7 @@
                                         <div class="col-md-4 col-sm-12 ">
                                             <div class="main-news-list">
                                                 <a href="page.html">
-                                                    <figure><img src="images/news-1.jpg" alt=""></figure>
+                                                    <figure><img src="/websites/images/news-1.jpg" alt=""></figure>
                                                     <div class="abs-title">
                                                         <h3 class="title">पर्सा र बारामा थप ३५ जनामा कोरोना संक्रमण
                                                             पुष्टि</h3>
@@ -747,7 +570,7 @@
                                 <div class="col-md-5 col-sm-12 ">
                                     <div class="normal-news-list">
                                         <a href="page.html">
-                                            <figure><img src="images/news-1.jpg" alt=""></figure>
+                                            <figure><img src="/websites/images/news-1.jpg" alt=""></figure>
                                             <div class="abs-title">
                                                 <h3 class="title">पर्सा र बारामा थप ३५ जनामा कोरोना संक्रमण पुष्टि</h3>
                                             </div>
@@ -756,7 +579,7 @@
                                     </div>
                                     <div class="normal-news-list">
                                         <a href="page.html">
-                                            <figure><img src="images/news-2.jpg" alt=""></figure>
+                                            <figure><img src="/websites/images/news-2.jpg" alt=""></figure>
                                             <div class="abs-title">
                                                 <h3 class="title">कमजोर मुद्दा पेश भएपछि अवैध मिर्गौला प्रत्यारोपण गर्ने
                                                     गिरोहलाई हाइसञ्चो</h3>
@@ -766,7 +589,7 @@
                                     </div>
                                     <div class="normal-news-list">
                                         <a href="page.html">
-                                            <figure><img src="images/news-3.jpg" alt=""></figure>
+                                            <figure><img src="/websites/images/news-3.jpg" alt=""></figure>
                                             <div class="abs-title">
                                                 <h3 class="title">युएईमा पाँच महिनामा ११० नेपालीको मृत्यु</h3>
                                             </div>
@@ -775,7 +598,7 @@
                                     </div>
                                     <div class="normal-news-list">
                                         <a href="page.html">
-                                            <figure><img src="images/news-1.jpg" alt=""></figure>
+                                            <figure><img src="/websites/images/news-1.jpg" alt=""></figure>
                                             <div class="abs-title">
                                                 <h3 class="title">युएईमा पाँच महिनामा ११० नेपालीको मृत्यु</h3>
                                             </div>
@@ -803,7 +626,7 @@
                                 <div class="col-md-4 col-sm-12 ">
                                     <div class="normal-news-list">
                                         <a href="page.html">
-                                            <figure><img src="images/news-1.jpg" alt=""></figure>
+                                            <figure><img src="/websites/images/news-1.jpg" alt=""></figure>
                                             <div class="abs-title">
                                                 <h3 class="title">पर्सा र बारामा थप ३५ जनामा कोरोना संक्रमण पुष्टि</h3>
                                             </div>
@@ -850,7 +673,7 @@
                                 <div class="col-md-4 col-sm-12 ">
                                     <div class="normal-news-list">
                                         <a href="page.html">
-                                            <figure><img src="images/news-1.jpg" alt=""></figure>
+                                            <figure><img src="/websites/images/news-1.jpg" alt=""></figure>
                                             <div class="abs-title">
                                                 <h3 class="title">पर्सा र बारामा थप ३५ जनामा कोरोना संक्रमण पुष्टि</h3>
                                             </div>
@@ -897,7 +720,7 @@
                                 <div class="col-md-4 col-sm-12 ">
                                     <div class="normal-news-list">
                                         <a href="page.html">
-                                            <figure><img src="images/news-1.jpg" alt=""></figure>
+                                            <figure><img src="/websites/images/news-1.jpg" alt=""></figure>
                                             <div class="abs-title">
                                                 <h3 class="title">पर्सा र बारामा थप ३५ जनामा कोरोना संक्रमण पुष्टि</h3>
                                             </div>
@@ -948,7 +771,7 @@
                     </div>
                     <!--------------------------- adz------------------------------------>
                     <div class="body-horizantal-adz ">
-                        <img src="images/ime.gif">
+                        <img src="/websites/images/ime.gif">
                     </div>
 
 
@@ -961,7 +784,7 @@
                         </div>
                         <div class="owl-carousel owl-theme photo-slider-img">
                             <div class="item">
-                                <img src="images/photo-1.jpg" alt="First slide">
+                                <img src="/websites/images/photo-1.jpg" alt="First slide">
                                 <div class="caption">
                                     <p>तनहुँको भीमाद नगरपालिका–४ स्थित मैदीखोलामा गत असार २९ गतेको बाढीले भत्किएको पुल ।
                                         पुल भत्किएपछि स्थानीयवासीलाई आवतजावतमा समस्या भएको छ । तस्वीर: कृष्ण
@@ -969,7 +792,7 @@
                                 </div>
                             </div>
                             <div class="item">
-                                <img src="images/photo-2.jpg" alt="First slide">
+                                <img src="/websites/images/photo-2.jpg" alt="First slide">
                                 <div class="caption">
                                     <p>तनहुँको भीमाद नगरपालिका–४ स्थित मैदीखोलामा गत असार २९ गतेको बाढीले भत्किएको पुल ।
                                         पुल भत्किएपछि स्थानीयवासीलाई आवतजावतमा समस्या भएको छ । तस्वीर: कृष्ण
@@ -989,59 +812,53 @@
                             <div class="main-title">राशीफल</div>
                         </div>
                         <ul>
-                            <li><a href="horoscope.html"><img src="images/horoscope-1.png" width="80" height="110"
+                            <li><a href="horoscope.html"><img src="/websites/images/horoscope-1.png" width="80" height="110"
                                                              alt=""/>
-                                    मेष</a></li>
-                            <li><a href="horoscope.html"><img src="images/horoscope-2.png" width="80" height="110"
-                                                             alt=""/>
-                                    बृष</a></li>
-                            <li><a href="horoscope.html"><img src="images/horoscope-3.png" width="80" height="110"
-                                                             alt=""/>
-                                    मिथुन</a></li>
-                            <li><a href="horoscope.html"><img src="images/horoscope-4.png" width="80" height="110"
+          section                          मिथुन</a></li>
+                            <li><a href="horoscope.html"><img src="/websites/images/horoscope-4.png" width="80" height="110"
                                                              alt=""/>
                                     कर्कट</a></li>
-                            <li><a href="horoscope.html"><img src="images/horoscope-5.png" width="80" height="110"
+                            <li><a href="horoscope.html"><img src="/websites/images/horoscope-5.png" width="80" height="110"
                                                              alt=""/>
                                     सिंह </a></li>
-                            <li><a href="horoscope.html"><img src="images/horoscope-6.png" width="80" height="110"
+                            <li><a href="horoscope.html"><img src="/websites/images/horoscope-6.png" width="80" height="110"
                                                              alt=""/>
                                     कन्या</a></li>
-                            <li><a href="horoscope.html"><img src="images/horoscope-7.png" width="80" height="110"
+                            <li><a href="horoscope.html"><img src="/websites/images/horoscope-7.png" width="80" height="110"
                                                              alt=""/>
                                     तुला</a></li>
-                            <li><a href="horoscope.html"><img src="images/horoscope-8.png" width="80" height="110"
+                            <li><a href="horoscope.html"><img src="/websites/images/horoscope-8.png" width="80" height="110"
                                                              alt=""/>
                                     बृश्चिक</a></li>
-                            <li><a href="horoscope.html"><img src="images/horoscope-9.png" width="80" height="110"
+                            <li><a href="horoscope.html"><img src="/websites/images/horoscope-9.png" width="80" height="110"
                                                              alt=""/>
                                     धनु </a></li>
-                            <li><a href="horoscope.html"><img src="images/horoscope-10.png" width="80" height="110"
+                            <li><a href="horoscope.html"><img src="/websites/images/horoscope-10.png" width="80" height="110"
                                                              alt=""/>
                                     मकर </a></li>
-                            <li><a href="horoscope.html"><img src="images/horoscope-11.png" width="80" height="110"
+                            <li><a href="horoscope.html"><img src="/websites/images/horoscope-11.png" width="80" height="110"
                                                              alt=""/>
                                     कुम्भ </a></li>
-                            <li><a href="horoscope.html"><img src="images/horoscope-12.png" width="80" height="110"
+                            <li><a href="horoscope.html"><img src="/websites/images/horoscope-12.png" width="80" height="110"
                                                              alt=""/>
                                     मीन </a></li>
                         </ul>
                     </div>
                     <div class="sidebar-adz">
                         <figure>
-                            <img src="images/sidead3.gif"/>
+                            <img src="/websites/images/sidead3.gif"/>
                         </figure>
                         <figure>
-                            <img src="images/sidead4.gif"/>
+                            <img src="/websites/images/sidead4.gif"/>
                         </figure>
                         <figure>
-                            <img src="images/sidead5.gif"/>
+                            <img src="/websites/images/sidead5.gif"/>
                         </figure>
                         <figure>
-                            <img src="images/sidead6.gif"/>
+                            <img src="/websites/images/sidead6.gif"/>
                         </figure>
                         <figure>
-                            <img src="images/sidead7.gif"/>
+                            <img src="/websites/images/sidead7.gif"/>
                         </figure>
 
 
@@ -1049,7 +866,7 @@
 
                     <div class="interview-box">
                         <div class="client-img">
-                            <a href="#"><img src="images/testimonial-1.png" alt="" class="img-fluid "></a>
+                            <a href="#"><img src="/websites/images/testimonial-1.png" alt="" class="img-fluid "></a>
                         </div>
                         <h3 class="title text-center"><a href="#">पर्सा र बारामा थप ३५ जनामा कोरोना संक्रमण पुष्टि</a>
                         </h3>
@@ -1057,7 +874,7 @@
 
                     <div class="interview-box">
                         <div class="client-img">
-                            <a href="#"><img src="images/testimonial-1.png" alt="" class="img-fluid "></a>
+                            <a href="#"><img src="/websites/images/testimonial-1.png" alt="" class="img-fluid "></a>
                         </div>
                         <h3 class="title text-center"><a href="#">पर्सा र बारामा थप ३५ जनामा कोरोना संक्रमण पुष्टि</a>
                         </h3>
@@ -1065,16 +882,16 @@
 
                     <div class="sidebar-adz">
                         <figure>
-                            <img src="images/sidead9.gif"/>
+                            <img src="/websites/images/sidead9.gif"/>
                         </figure>
                         <figure>
-                            <img src="images/sidead10.gif"/>
+                            <img src="/websites/images/sidead10.gif"/>
                         </figure>
                         <figure>
-                            <img src="images/sidead5.gif"/>
+                            <img src="/websites/images/sidead5.gif"/>
                         </figure>
                         <figure>
-                            <img src="images/sidead6.gif"/>
+                            <img src="/websites/images/sidead6.gif"/>
                         </figure>
 
 
@@ -1096,7 +913,7 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                     <div id="categories-4" class="widget widget_contact">
-                        <figure><img src="images/footer-logo.png" alt=""/>
+                        <figure><img src="/websites/images/footer-logo.png" alt=""/>
                         </figure>
 
                         <ul>
@@ -1226,7 +1043,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                <img src="images/photo-2.jpg" alt="" />
+                <img src="/websites/images/photo-2.jpg" alt="" />
             </div>
 
         </div>
@@ -1234,10 +1051,10 @@
 </div>
 
 
-<script src="js/vendor/jquery.min.js"></script>
-<script src="js/vendor/bootstrap.js"></script>
-<script src="js/vendor/owl.carousel.js"></script>
-<script src="js/custom.js"></script>
+<script src="/websites/js/vendor/jquery.min.js"></script>
+<script src="/websites/js/vendor/bootstrap.js"></script>
+<script src="/websites/js/vendor/owl.carousel.js"></script>
+<script src="/websites/js/custom.js"></script>
 <script>
     window.onscroll = function () {
         myFunction()
@@ -1256,5 +1073,5 @@
 </script>
 </body>
 
-<!-- Mirrored from sample-news.demo.radiantnepal.com/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 06 Jul 2022 09:09:48 GMT -->
+<!-- Mirrored from sample-news.demo.radiantnepal.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 06 Jul 2022 09:09:02 GMT -->
 </html>
