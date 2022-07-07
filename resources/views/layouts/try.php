@@ -42,7 +42,7 @@
             </div>
         </div>
     </section>
-@if(isset($top_first_news))
+
     <section class="breaking-news">
         <div class="container">
             <div class="row">
@@ -50,22 +50,22 @@
                     <!----top_three_news---->
                     <a href="page.html">
                         <div class="box">
-                            <h2 class="breaking-news-title">{{$top_first_news->caption_nepali ?? ''}}</h2>
+                            <h2 class="breaking-news-title">{{$top_first_news->caption_nepali}}</h2>
                             <figure><img src="{{$top_first_news->banner_image}}"></figure>
-                            <div class="description"><p>{{$top_first_news->short_content_nepali ?? ''}}</p></div>
+                            <div class="description"><p>{{$top_first_news->short_content_nepali}}</p></div>
                         </div>
                     </a>
 
                     <a href="page.html">
                         <div class="box">
-                            <h2 class="breaking-news-title">{{$top_first_news->caption_nepali ?? ''}}</h2>
+                            <h2 class="breaking-news-title">{{$top_first_news->caption_nepali}}</h2>
+
                         </div>
                     </a>
                 </div>
             </div>
         </div>
     </section>
-    @endif
 
     <section class="body-horizantal-adz ">
         <div class="container">
@@ -107,13 +107,10 @@
                     </div>
                     <!-------------------------------------- new  Section of news-------------------------------->
                     <!------here all category with their news displayed start------------------------------------------>
-                    
-                   
-                     @foreach($menus as $menu)
-                     @php $news = $menu->getRelatedNews; @endphp
-                          <div class="category-style-four">
+                    @foreach($menus as $menu)
+                    <div class="category-style-four">
                         <div class="cat-title">
-                            <div class="main-title"> {{$menu->caption_nepali}}</div>
+                            <div class="main-title">{{$menu->caption_nepali}}</div>
                             <div class="sub-title"><a href="#">सबै
                                     <i class="fas fa-list"></i></a>
                             </div>
@@ -123,45 +120,138 @@
                             <div class="row">
                                 <div class="col-md-7  col-sm-12 ">
                                     <div class="row">
-                                        
+                                         <!-----per menu news start---->
+                                         @php $news = $menu->getRelatedNews; @endphp
                                          @foreach($news as $key=>$new)
-                                         @php if($key>3){break;} @endphp
-                                        <div @if($key==0) class="col-md-12" @else class="col-md-4 col-sm-12 " @endif>
+                                         @php if($key>6){break;} @endphp
+                                        <div class="col-md-12">
                                             <div class="main-news-list">
                                                 <a href="page.html">
                                                     <figure><img src="/websites/images/news-1.jpg" alt=""></figure>
                                                     <div class="abs-title">
-                                                        <h3 class="title">{{$new->caption_nepali}}</h3>
+                                                        <h3 class="title">पर्सा र बारामा थप ३५ जनामा कोरोना संक्रमण
+                                                            पुष्टि {{$new->created_at}} </h3>
                                                     </div>
 
                                                 </a>
                                             </div>
                                         </div>
-                                        @endforeach                                    
+                                        @endforeach
+                                         <!-----per menu news closed---->
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    @endforeach
+                     <!------here all category with their news displayed closed------------------------------------------>
+                          <div class="category-style-four">
+                        <div class="cat-title">
+                            <div class="main-title"> नेपाली ब्रान्ड</div>
+                            <div class="sub-title"><a href="#">सबै
+                                    <i class="fas fa-list"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="news-listing">
+                            <div class="row">
+                                <div class="col-md-7  col-sm-12 ">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="main-news-list">
+                                                <a href="page.html">
+                                                    <figure><img src="/websites/images/news-1.jpg" alt=""></figure>
+                                                    <div class="abs-title">
+                                                        <h3 class="title">पर्सा र बारामा थप ३५ जनामा कोरोना संक्रमण
+                                                            पुष्टि</h3>
+                                                    </div>
+
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-12 ">
+                                            <div class="main-news-list">
+                                                <a href="page.html">
+                                                    <figure><img src="/websites/images/news-1.jpg" alt=""></figure>
+                                                    <div class="abs-title">
+                                                        <h3 class="title">पर्सा र बारामा थप ३५ जनामा कोरोना संक्रमण
+                                                            पुष्टि</h3>
+                                                    </div>
+
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-12 ">
+                                            <div class="main-news-list">
+                                                <a href="page.html">
+                                                    <figure><img src="/websites/images/news-1.jpg" alt=""></figure>
+                                                    <div class="abs-title">
+                                                        <h3 class="title">पर्सा र बारामा थप ३५ जनामा कोरोना संक्रमण
+                                                            पुष्टि</h3>
+                                                    </div>
+
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-12 ">
+                                            <div class="main-news-list">
+                                                <a href="page.html">
+                                                    <figure><img src="/websites/images/news-1.jpg" alt=""></figure>
+                                                    <div class="abs-title">
+                                                        <h3 class="title">पर्सा र बारामा थप ३५ जनामा कोरोना संक्रमण
+                                                            पुष्टि</h3>
+                                                    </div>
+
+                                                </a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-md-5 col-sm-12 ">
-                                    @foreach($news as $key=>$new)
-                                    @if($key>=4 && $key<=7)
                                     <div class="normal-news-list">
                                         <a href="page.html">
                                             <figure><img src="/websites/images/news-1.jpg" alt=""></figure>
                                             <div class="abs-title">
-                                                <h3 class="title">{{$new->caption_nepali}}</h3>
+                                                <h3 class="title">पर्सा र बारामा थप ३५ जनामा कोरोना संक्रमण पुष्टि</h3>
                                             </div>
 
                                         </a>
-                                    </div>  
-                                    @endif
-                                    @endforeach      
+                                    </div>
+                                    <div class="normal-news-list">
+                                        <a href="page.html">
+                                            <figure><img src="/websites/images/news-2.jpg" alt=""></figure>
+                                            <div class="abs-title">
+                                                <h3 class="title">कमजोर मुद्दा पेश भएपछि अवैध मिर्गौला प्रत्यारोपण गर्ने
+                                                    गिरोहलाई हाइसञ्चो</h3>
+                                            </div>
+
+                                        </a>
+                                    </div>
+                                    <div class="normal-news-list">
+                                        <a href="page.html">
+                                            <figure><img src="/websites/images/news-3.jpg" alt=""></figure>
+                                            <div class="abs-title">
+                                                <h3 class="title">युएईमा पाँच महिनामा ११० नेपालीको मृत्यु</h3>
+                                            </div>
+
+                                        </a>
+                                    </div>
+                                    <div class="normal-news-list">
+                                        <a href="page.html">
+                                            <figure><img src="/websites/images/news-1.jpg" alt=""></figure>
+                                            <div class="abs-title">
+                                                <h3 class="title">युएईमा पाँच महिनामा ११० नेपालीको मृत्यु</h3>
+                                            </div>
+
+                                        </a>
+                                    </div>
+
                                 </div>
 
                             </div>
                         </div>
 
                     </div>
-                    @endforeach
-                      <!------here all category with their news displayed closed------------------------------------------>
                     <!-------------------------------------- new  Section of news-------------------------------->
               
                     <!--------------------------- adz------------------------------------>

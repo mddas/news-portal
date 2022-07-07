@@ -52,4 +52,8 @@ class Navigation extends Model
     {
         return $this->belongsTo('App\Models\Navigation','parent_page_id','id') ;
     }
+    public function getRelatedNews(){
+		$news =  $this->hasMany(Navigation::class,'parent_page_id','id');//Navigation::all()->where('parent_page_id')->latest()->get();
+        return $news->orderBy('created_at', 'desc');
+	}
 }

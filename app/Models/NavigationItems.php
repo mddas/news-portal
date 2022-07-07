@@ -14,4 +14,5 @@ class NavigationItems extends Model
     public function navigation(){
 		return $this->belongsTo('App\Models\Navigation');
 	}
+
 }

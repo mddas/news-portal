@@ -67,7 +67,7 @@ class NavigationController extends Controller
 
         if($request->hasFile('banner_image')){
             $banner_file = $request->file('banner_image');
-            $data['banner_image'] = time().'_'.$banner_file->getClientOriginalName();
+            $data['banner_image'] = "/uploads/banner_image/".time().'_'.$banner_file->getClientOriginalName();
             $destinationPath = public_path('uploads/banner_image');
             $banner_file->move($destinationPath,$data['banner_image']);
         }
@@ -140,11 +140,11 @@ class NavigationController extends Controller
         }
 
          if($request->hasFile('banner_image')){
-            if(file_exists(public_path('uploads/banner_image').'/'.$navigation->banner_image)){
-                File::delete('uploads/banner_image/'.$navigation->banner_image);
+            if(file_exists(public_path($navigation->banner_image))){
+                File::delete($navigation->banner_image);
             }
             $banner_image = $request->file('banner_image');
-            $data['banner_image'] = time().'_'.$banner_image->getClientOriginalName();
+            $data['banner_image'] = "/uploads/banner_image/".time().'_'.$banner_image->getClientOriginalName();
             $destinationPath = public_path('uploads/banner_image');
             $banner_image->move($destinationPath,$data['banner_image']);
         }
@@ -199,8 +199,8 @@ class NavigationController extends Controller
             File::delete(public_path('uploads/featured_image/'.$navigation->featured_image));
         }
 
-        if(file_exists(public_path('uploads/banner_image/'.$navigation->banner_image))){
-            File::delete(public_path('uploads/banner_image/'.$navigation->banner_image));
+        if(file_exists(public_path($navigation->banner_image))){
+            File::delete(public_path($navigation->banner_image));
         }
         
         if(file_exists(public_path('uploads/attachment/'.$navigation->attachment))){
@@ -238,7 +238,7 @@ class NavigationController extends Controller
     {
         $bannerimage = Navigation::where('id',$id)->where('banner_image','like','%_%')->first();
         $image = $bannerimage->banner_image;
-        File::delete(public_path('uploads/banner_image/'.$image));
+        File::delete(public_path($image));
         $bannerimage->update(['banner_image'=>null]);
         return redirect()->back();
     }

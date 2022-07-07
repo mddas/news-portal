@@ -265,7 +265,7 @@
             <div class="form-group col-md-12">
                 <label for="banner_file">Banner Image</label>
                     @if($navigation->banner_image)   
-                    <img src="{{asset('public/uploads/banner_image/'.$navigation->banner_image)}}" alt="" height="150" width="100%">                    
+                    <img src="{{asset($navigation->banner_image)}}" alt="" height="150" width="100%">                    
                     <a href="/admin/navigation-edit/{{$nav_category}}/{{$navigation->id}}/deleteimage3" onclick="return confirm('Are you sure to delete')" style="color: red">Remove Banner Image</a>
                     @endif                
                     <input class="form-control" type="file" id="banner_file" name="banner_image">
