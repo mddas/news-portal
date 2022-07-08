@@ -15,7 +15,7 @@
                           <div class="category-style-four">
                         <div class="cat-title">
                             <div class="main-title"> {{$menu->caption_nepali}}</div>
-                            <div class="sub-title"><a href="#">सबै
+                            <div class="sub-title"><a href="{{route('singlepage',$menu->nav_name)}}">सबै
                                     <i class="fas fa-list"></i></a>
                             </div>
                         </div>
@@ -29,7 +29,7 @@
                                          @php if($key>3){break;} @endphp
                                         <div @if($key==0) class="col-md-12" @else class="col-md-4 col-sm-12 " @endif>
                                             <div class="main-news-list">
-                                                <a href="page.html">
+                                                <a href="{{route('singlepage',$new->nav_name)}}">
                                                     <figure><img src="/websites/images/news-1.jpg" alt=""></figure>
                                                     <div class="abs-title">
                                                         <h3 class="title">{{$new->caption_nepali}}</h3>
@@ -45,7 +45,7 @@
                                     @foreach($news as $key=>$new)
                                     @if($key>=4 && $key<=7)
                                     <div class="normal-news-list">
-                                        <a href="page.html">
+                                        <a href="{{route('singlepage',$new->nav_name)}}">
                                             <figure><img src="/websites/images/news-1.jpg" alt=""></figure>
                                             <div class="abs-title">
                                                 <h3 class="title">{{$new->caption_nepali}}</h3>
@@ -108,34 +108,34 @@
                             <div class="main-title">राशीफल</div>
                         </div>
                         <ul>
-                            <li><a href="horoscope.html"><img src="/websites/images/horoscope-1.png" width="80" height="110"
+                            <li><a href="#"><img src="/websites/images/horoscope-1.png" width="80" height="110"
                                                              alt=""/>
           section                          मिथुन</a></li>
-                            <li><a href="horoscope.html"><img src="/websites/images/horoscope-4.png" width="80" height="110"
+                            <li><a href="#"><img src="/websites/images/horoscope-4.png" width="80" height="110"
                                                              alt=""/>
                                     कर्कट</a></li>
-                            <li><a href="horoscope.html"><img src="/websites/images/horoscope-5.png" width="80" height="110"
+                            <li><a href="#"><img src="/websites/images/horoscope-5.png" width="80" height="110"
                                                              alt=""/>
                                     सिंह </a></li>
-                            <li><a href="horoscope.html"><img src="/websites/images/horoscope-6.png" width="80" height="110"
+                            <li><a href="#"><img src="/websites/images/horoscope-6.png" width="80" height="110"
                                                              alt=""/>
                                     कन्या</a></li>
-                            <li><a href="horoscope.html"><img src="/websites/images/horoscope-7.png" width="80" height="110"
+                            <li><a href="#"><img src="/websites/images/horoscope-7.png" width="80" height="110"
                                                              alt=""/>
                                     तुला</a></li>
-                            <li><a href="horoscope.html"><img src="/websites/images/horoscope-8.png" width="80" height="110"
+                            <li><a href="#"><img src="/websites/images/horoscope-8.png" width="80" height="110"
                                                              alt=""/>
                                     बृश्चिक</a></li>
-                            <li><a href="horoscope.html"><img src="/websites/images/horoscope-9.png" width="80" height="110"
+                            <li><a href="#"><img src="/websites/images/horoscope-9.png" width="80" height="110"
                                                              alt=""/>
                                     धनु </a></li>
-                            <li><a href="horoscope.html"><img src="/websites/images/horoscope-10.png" width="80" height="110"
+                            <li><a href="#"><img src="/websites/images/horoscope-10.png" width="80" height="110"
                                                              alt=""/>
                                     मकर </a></li>
-                            <li><a href="horoscope.html"><img src="/websites/images/horoscope-11.png" width="80" height="110"
+                            <li><a href="#"><img src="/websites/images/horoscope-11.png" width="80" height="110"
                                                              alt=""/>
                                     कुम्भ </a></li>
-                            <li><a href="horoscope.html"><img src="/websites/images/horoscope-12.png" width="80" height="110"
+                            <li><a href="#"><img src="/websites/images/horoscope-12.png" width="80" height="110"
                                                              alt=""/>
                                     मीन </a></li>
                         </ul>

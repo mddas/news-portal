@@ -4,7 +4,7 @@
                 @foreach($homenews as $key=>$three_news)
                 @php if($key>2){break;} @endphp
                 <div class="col-md-4 col-sm-12">
-                    <a href="#">
+                    <a href="{{route('singlepage',$three_news->nav_name)}}">
                         <div class="box">
                             <figure><img src="{{$three_news->banner_image}}"></figure>
                             <h3 class="title">{{$three_news->caption_nepali}}</h3>

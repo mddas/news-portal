@@ -47,333 +47,100 @@ include('website.body-horizontal-adz') include('website.top-three-news') -->
                     </div>
                  </div>
                 <!----content start------------->
-                <div class="category-page-type-1">
-                    <div class="news-listing">
-                        <div class="row">
-                            <div class="col-md-6 col-sm-12">
-                                <div class="normal-news-list">
-                                    <a href="single.html">
-                                        <figure>
-                                            <img
-                                                src="/websites/images/news-1.jpg"
-                                                alt=""
-                                            />
-                                        </figure>
-                                        <div class="abs-title">
-                                            <h3 class="title">
-                                                पर्सा र बारामा थप ३५ जनामा
-                                                कोरोना संक्रमण पुष्टि
-                                            </h3>
+                @php
+                   $loop = $news->count()/6;
+                   if($loop>6){
+                       $loop = 6;
+                   }
+                   $static_data = 0;
+                @endphp
+                @for($i=1; $i<=$loop+2; $i++)
+                  @if($i%2!=0)
+                  <!----two data------->
+                    <div class="category-page-type-1">
+                        <div class="news-listing">
+                            <div class="row">
+                                <!---two start----->
+                                @php $data = 0; @endphp
+                                @foreach($news as $key=>$new)
+                                  @if($key>=$static_data)
+                                  @php $data = $data+1; $static_data = $static_data+1 @endphp
+                                    <div class="col-md-6 col-sm-12">
+                                        <div class="normal-news-list">
+                                            <a href="{{route('singlepage',$new->nav_name)}}">
+                                                <figure>
+                                                    <img
+                                                        src="{{$new->banner_image}}"
+                                                        alt=""
+                                                    />
+                                                </figure>
+                                                <div class="abs-title">
+                                                    <h3 class="title">
+                                                       {{$new->caption_nepali}}
+                                                    </h3>
+                                                </div>
+                                                <div class="post-meta">
+                                                    <div>
+                                                        <i class="icofont-calendar"></i>
+                                                        बिहिबार, साउन २९, २०७७
+                                                    </div>
+                                                    <div></div>
+                                                </div>
+                                            </a>
                                         </div>
-                                        <div class="post-meta">
-                                            <div>
-                                                <i class="icofont-calendar"></i>
-                                                बिहिबार, साउन २९, २०७७
-                                            </div>
-                                            <div></div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-12">
-                                <div class="normal-news-list">
-                                    <a href="single.html">
-                                        <figure>
-                                            <img
-                                                src="/websites/images/news-1.jpg"
-                                                alt=""
-                                            />
-                                        </figure>
-                                        <div class="abs-title">
-                                            <h3 class="title">
-                                                पर्सा र बारामा थप ३५ जनामा
-                                                कोरोना संक्रमण पुष्टि
-                                            </h3>
-                                        </div>
-                                        <div class="post-meta">
-                                            <div>
-                                                <i class="icofont-calendar"></i>
-                                                बिहिबार, साउन २९, २०७७
-                                            </div>
-                                            <div></div>
-                                        </div>
-                                    </a>
-                                </div>
+                                    </div>
+                                  @php if($data==2){break;} @endphp
+                                  @endif
+                                @endforeach
+                                <!---closed-------->
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="category-page-type-1">
-                    <div class="news-listing">
-                        <div class="row">
-                            <div class="col-md-3 col-sm-12">
-                                <div class="normal-news-list">
-                                    <a href="single.html">
-                                        <figure>
-                                            <img
-                                                src="/websites/images/news-1.jpg"
-                                                alt=""
-                                            />
-                                        </figure>
-                                        <div class="abs-title">
-                                            <h3 class="title">
-                                                पर्सा र बारामा थप ३५ जनामा
-                                                कोरोना संक्रमण पुष्टि
-                                            </h3>
+                    <!------two data closed---->
+                   @elseif($i%2==0)
+                        <div class="category-page-type-1">
+                            <div class="news-listing">
+                                <div class="row">
+                                    @php $data = 0; @endphp
+                                    @foreach($news as $key=>$new)
+                                    @if($key>=$static_data)
+                                    @php $data = $data+1; $static_data = $static_data+1 @endphp
+                                    <!----start--->
+                                    <div class="col-md-3 col-sm-12">
+                                        <div class="normal-news-list">
+                                            <a href="{{route('singlepage',$new->nav_name)}}">
+                                                <figure>
+                                                    <img
+                                                        src="{{$new->banner_image}}"
+                                                        alt=""
+                                                    />
+                                                </figure>
+                                                <div class="abs-title">
+                                                    <h3 class="title">
+                                                        {{$new->caption_nepali}}
+                                                        <!-- "static data:".$static_data." local data:".$data." key:".$key -->
+                                                    </h3>
+                                                </div>
+                                                <div class="post-meta">
+                                                    <div>
+                                                        <i class="icofont-calendar"></i>
+                                                        बिहिबार, साउन २९, २०७७
+                                                    </div>
+                                                    <div></div>
+                                                </div>
+                                            </a>
                                         </div>
-                                        <div class="post-meta">
-                                            <div>
-                                                <i class="icofont-calendar"></i>
-                                                बिहिबार, साउन २९, २०७७
-                                            </div>
-                                            <div></div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-12">
-                                <div class="normal-news-list">
-                                    <a href="single.html">
-                                        <figure>
-                                            <img
-                                                src="/websites/images/news-1.jpg"
-                                                alt=""
-                                            />
-                                        </figure>
-                                        <div class="abs-title">
-                                            <h3 class="title">
-                                                पर्सा र बारामा थप ३५ जनामा
-                                                कोरोना संक्रमण पुष्टि
-                                            </h3>
-                                        </div>
-                                        <div class="post-meta">
-                                            <div>
-                                                <i class="icofont-calendar"></i>
-                                                बिहिबार, साउन २९, २०७७
-                                            </div>
-                                            <div></div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-12">
-                                <div class="normal-news-list">
-                                    <a href="single.html">
-                                        <figure>
-                                            <img
-                                                src="/websites/images/news-1.jpg"
-                                                alt=""
-                                            />
-                                        </figure>
-                                        <div class="abs-title">
-                                            <h3 class="title">
-                                                पर्सा र बारामा थप ३५ जनामा
-                                                कोरोना संक्रमण पुष्टि
-                                            </h3>
-                                        </div>
-                                        <div class="post-meta">
-                                            <div>
-                                                <i class="icofont-calendar"></i>
-                                                बिहिबार, साउन २९, २०७७
-                                            </div>
-                                            <div></div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-12">
-                                <div class="normal-news-list">
-                                    <a href="single.html">
-                                        <figure>
-                                            <img
-                                                src="/websites/images/news-1.jpg"
-                                                alt=""
-                                            />
-                                        </figure>
-                                        <div class="abs-title">
-                                            <h3 class="title">
-                                                पर्सा र बारामा थप ३५ जनामा
-                                                कोरोना संक्रमण पुष्टि
-                                            </h3>
-                                        </div>
-                                        <div class="post-meta">
-                                            <div>
-                                                <i class="icofont-calendar"></i>
-                                                बिहिबार, साउन २९, २०७७
-                                            </div>
-                                            <div></div>
-                                        </div>
-                                    </a>
+                                    </div>
+                                    <!-----closed----->
+                                    @php if($data==4){break;} @endphp
+                                    @endif
+                                    @endforeach
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-
-                <div class="category-page-type-1">
-                    <div class="news-listing">
-                        <div class="row">
-                            <div class="col-md-6 col-sm-12">
-                                <div class="normal-news-list">
-                                    <a href="single.html">
-                                        <figure>
-                                            <img
-                                                src="/websites/images/news-1.jpg"
-                                                alt=""
-                                            />
-                                        </figure>
-                                        <div class="abs-title">
-                                            <h3 class="title">
-                                                पर्सा र बारामा थप ३५ जनामा
-                                                कोरोना संक्रमण पुष्टि
-                                            </h3>
-                                        </div>
-                                        <div class="post-meta">
-                                            <div>
-                                                <i class="icofont-calendar"></i>
-                                                बिहिबार, साउन २९, २०७७
-                                            </div>
-                                            <div></div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-12">
-                                <div class="normal-news-list">
-                                    <a href="single.html">
-                                        <figure>
-                                            <img
-                                                src="/websites/images/news-1.jpg"
-                                                alt=""
-                                            />
-                                        </figure>
-                                        <div class="abs-title">
-                                            <h3 class="title">
-                                                पर्सा र बारामा थप ३५ जनामा
-                                                कोरोना संक्रमण पुष्टि
-                                            </h3>
-                                        </div>
-                                        <div class="post-meta">
-                                            <div>
-                                                <i class="icofont-calendar"></i>
-                                                बिहिबार, साउन २९, २०७७
-                                            </div>
-                                            <div></div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="category-page-type-1">
-                    <div class="news-listing">
-                        <div class="row">
-                            <div class="col-md-3 col-sm-12">
-                                <div class="normal-news-list">
-                                    <a href="single.html">
-                                        <figure>
-                                            <img
-                                                src="/websites/images/news-1.jpg"
-                                                alt=""
-                                            />
-                                        </figure>
-                                        <div class="abs-title">
-                                            <h3 class="title">
-                                                पर्सा र बारामा थप ३५ जनामा
-                                                कोरोना संक्रमण पुष्टि
-                                            </h3>
-                                        </div>
-                                        <div class="post-meta">
-                                            <div>
-                                                <i class="icofont-calendar"></i>
-                                                बिहिबार, साउन २९, २०७७
-                                            </div>
-                                            <div></div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-12">
-                                <div class="normal-news-list">
-                                    <a href="single.html">
-                                        <figure>
-                                            <img
-                                                src="/websites/images/news-1.jpg"
-                                                alt=""
-                                            />
-                                        </figure>
-                                        <div class="abs-title">
-                                            <h3 class="title">
-                                                पर्सा र बारामा थप ३५ जनामा
-                                                कोरोना संक्रमण पुष्टि
-                                            </h3>
-                                        </div>
-                                        <div class="post-meta">
-                                            <div>
-                                                <i class="icofont-calendar"></i>
-                                                बिहिबार, साउन २९, २०७७
-                                            </div>
-                                            <div></div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-12">
-                                <div class="normal-news-list">
-                                    <a href="single.html">
-                                        <figure>
-                                            <img
-                                                src="/websites/images/news-1.jpg"
-                                                alt=""
-                                            />
-                                        </figure>
-                                        <div class="abs-title">
-                                            <h3 class="title">
-                                                पर्सा र बारामा थप ३५ जनामा
-                                                कोरोना संक्रमण पुष्टि
-                                            </h3>
-                                        </div>
-                                        <div class="post-meta">
-                                            <div>
-                                                <i class="icofont-calendar"></i>
-                                                बिहिबार, साउन २९, २०७७
-                                            </div>
-                                            <div></div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-12">
-                                <div class="normal-news-list">
-                                    <a href="single.html">
-                                        <figure>
-                                            <img
-                                                src="/websites/images/news-1.jpg"
-                                                alt=""
-                                            />
-                                        </figure>
-                                        <div class="abs-title">
-                                            <h3 class="title">
-                                                पर्सा र बारामा थप ३५ जनामा
-                                                कोरोना संक्रमण पुष्टि
-                                            </h3>
-                                        </div>
-                                        <div class="post-meta">
-                                            <div>
-                                                <i class="icofont-calendar"></i>
-                                                बिहिबार, साउन २९, २०७७
-                                            </div>
-                                            <div></div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                       
+                   @endif
+                @endfor
                 <!--closed--->
             </div>
         </div>

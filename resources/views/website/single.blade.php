@@ -51,7 +51,7 @@ include('website.body-horizontal-adz') include('website.top-three-news') -->
                                 <div class="row">
                                     <div class="col-md-4 col-sm-12 ">
                                         <div class="normal-news-list">
-                                            <a href="single.html">
+                                            <a href="#">
                                                 <figure><img src="/websites/images/news-1.jpg" alt=""></figure>
                                                 <div class="abs-title">
                                                     <h3 class="title">पर्सा र बारामा थप ३५ जनामा कोरोना संक्रमण
@@ -68,7 +68,7 @@ include('website.body-horizontal-adz') include('website.top-three-news') -->
                                     </div>
                                     <div class="col-md-4 col-sm-12 ">
                                         <div class="normal-news-list">
-                                            <a href="single.html">
+                                            <a href="#">
                                                 <figure><img src="/websites/images/news-1.jpg" alt=""></figure>
                                                 <div class="abs-title">
                                                     <h3 class="title">पर्सा र बारामा थप ३५ जनामा कोरोना संक्रमण
@@ -85,7 +85,7 @@ include('website.body-horizontal-adz') include('website.top-three-news') -->
                                     </div>
                                     <div class="col-md-4 col-sm-12 ">
                                         <div class="normal-news-list">
-                                            <a href="single.html">
+                                            <a href="#">
                                                 <figure><img src="/websites/images/news-1.jpg" alt=""></figure>
                                                 <div class="abs-title">
                                                     <h3 class="title">पर्सा र बारामा थप ३५ जनामा कोरोना संक्रमण

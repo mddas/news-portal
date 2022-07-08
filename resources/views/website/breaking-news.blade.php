@@ -12,7 +12,7 @@
                         </div>
                     </a>
 
-                    <a href="page.html">
+                    <a href="{{route('singlepage',$top_first_news->nav_name)}}">
                         <div class="box">
                             <h2 class="breaking-news-title">{{$top_first_news->caption_nepali ?? ''}}</h2>
                         </div>
