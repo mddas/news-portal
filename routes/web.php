@@ -80,6 +80,7 @@ Route::prefix('admin')->group(function(){
 });
 
 Route::get('/{slug}',[HomeController::class,'category'])->name('category');
+Route::get('/page/{slug}',[HomeController::class,'singlePage'])->name('singlepage');
 // Route::any('{alias}', [
 //     'as' => 'pages',
 //     'uses' => 'HomeController@inner_pages'

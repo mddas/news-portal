@@ -25,4 +25,7 @@ class GlobalSetting extends Model
             'extra_one',
             'extra_tow'
     ];
+	public static function getSetting(){
+		return GlobalSetting::all();
+	}
 }

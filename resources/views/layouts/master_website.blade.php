@@ -23,7 +23,9 @@
 <!------home section----->
 @yield('home')
 
-
+@php
+  $global_setting = App\Models\GlobalSetting::getSetting()->first();
+@endphp
 
 <footer id="colophon" class="site-footer">
     <div class="upper-footer">
@@ -35,11 +37,11 @@
                         </figure>
 
                         <ul>
-                            <li><a href="#" ><i class="fab fa-youtube "></i> Sample News Nepal</a> </li>
-                            <li><a href="#" ><i class="fab fa-facebook-square "></i> Sample News Nepal</a> </li>
-                            <li><a href="mailto:khabarinepal555@gmail.com" ><i class="fas fa-envelope "></i> SampleNews@gmail.com</a> </li>
+                            <li><a href="#" ><i class="fab fa-youtube "></i> {{$global_setting->site_name}}</a> </li>
+                            <li><a href="#" ><i class="fab fa-facebook-square "></i> {{$global_setting->site_name}}</a> </li>
+                            <li><a href="mailto:{{$global_setting->site_email}}" ><i class="fas fa-envelope "></i> {{$global_setting->site_email}}</a> </li>
 
-                            <li><a href="tel:" class=""><i class="fas fa-phone-volume"></i> +977-9846xxxxxx</a>
+                            <li><a href="tel:" class=""><i class="fas fa-phone-volume"></i> {{$global_setting->phone}}</a>
 
                             </li>
 

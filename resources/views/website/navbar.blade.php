@@ -11,9 +11,24 @@
                             <!---------start menu and sub menu----->  
                             <li class="current-menu-item"><a href="/">मुख्य पृष्ठ</a></li>
                             @foreach($menus as $menu)                            
-                            <li><a href="{{route('category',$menu->nav_name)}}">{{$menu->caption_nepali}}</a></li>
-                            @endforeach
                             <li>
+                                <a href="{{route('category',$menu->nav_name)}}">
+                                    {{$menu->caption_nepali}}
+                                </a>
+                                    @if($menu->childs->where('page_type','Group')->count()>0)
+                                    @php 
+                                        $submenu = $menu->childs->where('page_type','Group');
+                                    @endphp
+                                    <ul>
+                                        @foreach($submenu as $sub)
+                                          <li><a href="{{route('category',$sub->nav_name)}}">{{$sub->nav_name}}</a></li>
+                                        @endforeach
+                                    </ul>
+                                     @endif
+                                
+                            </li>
+                            @endforeach
+                            <!-- <li>
                               <a href="#"> विविध  </a>
                                  <ul>
                                     <li><a href="#">कला/साहित्य</a></li>
@@ -23,7 +38,7 @@
                                     <li><a href="#">अपराध</a></li>
                                 </ul>
                                 
-                            </li>
+                            </li> -->
       
                             
                             <!-------end menu sub menu------------>

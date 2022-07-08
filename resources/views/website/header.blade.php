@@ -1,9 +1,13 @@
+@php
+  $global_setting = App\Models\GlobalSetting::getSetting()->first();
+@endphp
 <header>
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-12">
                 <div class="logo">
-                    <img src="/websites/images/logo.png">
+                    <img src="/uploads/icons/{{$global_setting->site_logo}}">
+                    
                 </div>
             </div>
             <div class="col-lg-9  col-md-4 col-sm-12">
