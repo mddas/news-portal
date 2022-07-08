@@ -10,7 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+use App\Http\Controllers\HomeController;
 
 Auth::routes();
 
@@ -79,6 +79,7 @@ Route::prefix('admin')->group(function(){
 
 });
 
+Route::get('/{slug}',[HomeController::class,'category'])->name('category');
 // Route::any('{alias}', [
 //     'as' => 'pages',
 //     'uses' => 'HomeController@inner_pages'

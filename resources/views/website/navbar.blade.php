@@ -9,9 +9,9 @@
                     <div class="main-menu-container-collapse">
                         <ul id="primary-menu" class="menu nav-menu" aria-expanded="false">
                             <!---------start menu and sub menu----->  
-                            <li class="current-menu-item"><a href="index-2.html">मुख्य पृष्ठ</a></li>
+                            <li class="current-menu-item"><a href="/">मुख्य पृष्ठ</a></li>
                             @foreach($menus as $menu)                            
-                            <li><a href="category-page.html">{{$menu->caption_nepali}}</a></li>
+                            <li><a href="{{route('category',$menu->nav_name)}}">{{$menu->caption_nepali}}</a></li>
                             @endforeach
                             <li>
                               <a href="#"> विविध  </a>
