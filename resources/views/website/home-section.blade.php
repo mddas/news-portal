@@ -46,7 +46,7 @@
                                     @if($key>=4 && $key<=7)
                                     <div class="normal-news-list">
                                         <a href="{{route('singlepage',$new->nav_name)}}">
-                                            <figure><img src="/websites/images/news-1.jpg" alt=""></figure>
+                                            <figure><img src="{{$new->banner_image}}" alt=""></figure>
                                             <div class="abs-title">
                                                 <h3 class="title">{{$new->caption_nepali}}</h3>
                                             </div>
