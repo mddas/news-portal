@@ -20,8 +20,9 @@
                                         $submenu = $menu->childs->where('page_type','Group');
                                     @endphp
                                     <ul>
+                                        <!-- route('category',$sub->nav_name) -->
                                         @foreach($submenu as $sub)
-                                          <li><a href="{{route('category',$sub->nav_name)}}">{{$sub->nav_name}}</a></li>
+                                          <li><a href="#">{{$sub->caption_nepali}}</a></li>
                                         @endforeach
                                     </ul>
                                      @endif
