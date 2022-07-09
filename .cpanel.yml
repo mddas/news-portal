@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home1/demoradiantnepal/news.demo.radiantnepal.com/
-    - /bin/cp * $DEPLOYPATH
+    - /bin/cp -r * $DEPLOYPATH
