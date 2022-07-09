@@ -30,7 +30,7 @@
                                         <div @if($key==0) class="col-md-12" @else class="col-md-4 col-sm-12 " @endif>
                                             <div class="main-news-list">
                                                 <a href="{{route('singlepage',$new->nav_name)}}">
-                                                    <figure><img src="/websites/images/news-1.jpg" alt=""></figure>
+                                                    <figure><img src="{{$new->banner_image}}" alt=""></figure>
                                                     <div class="abs-title">
                                                         <h3 class="title">{{$new->caption_nepali}}</h3>
                                                     </div>
