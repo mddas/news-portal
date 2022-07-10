@@ -18,7 +18,7 @@ include('website.body-horizontal-adz') include('website.top-three-news') -->
                             <div><i class="icofont-user-alt-4"></i> गोकर्णप्रसाद उपाध्याय  <i class="icofont-calendar"></i> बिहिबार, साउन २९, २०७७</div>
                         </div> -->
 
-                        <figure><img src="{{$singlenews->banner_image}}" alt=""></figure>
+                        <figure><img src="/websites/images/news-1.jpg" alt=""></figure>
                         <div class="inner-page">
                             <div class="description">
                                 <p>

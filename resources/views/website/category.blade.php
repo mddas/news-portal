@@ -26,7 +26,7 @@ include('website.body-horizontal-adz') include('website.top-three-news') -->
                                     <a href="{{route('singlepage',$new->nav_name)}}">
                                         <figure>
                                             <img
-                                                src="{{$new->banner_image}}"
+                                                src="/websites/images/news-1.jpg"
                                                 alt=""
                                             />
                                         </figure>
@@ -70,7 +70,7 @@ include('website.body-horizontal-adz') include('website.top-three-news') -->
                                             <a href="{{route('singlepage',$new->nav_name)}}">
                                                 <figure>
                                                     <img
-                                                        src="{{$new->banner_image}}"
+                                                        src="/websites/images/news-1.jpg"
                                                         alt=""
                                                     />
                                                 </figure>
@@ -111,7 +111,7 @@ include('website.body-horizontal-adz') include('website.top-three-news') -->
                                             <a href="{{route('singlepage',$new->nav_name)}}">
                                                 <figure>
                                                     <img
-                                                        src="{{$new->banner_image}}"
+                                                        src="/websites/images/news-1.jpg"
                                                         alt=""
                                                     />
                                                 </figure>

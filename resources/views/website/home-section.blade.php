@@ -30,7 +30,7 @@
                                         <div @if($key==0) class="col-md-12" @else class="col-md-4 col-sm-12 " @endif>
                                             <div class="main-news-list">
                                                 <a href="{{route('singlepage',$new->nav_name)}}">
-                                                    <figure><img src="{{$new->banner_image}}" alt=""></figure>
+                                                    <figure><img src="/websites/images/news-1.jpg" alt=""></figure>
                                                     <div class="abs-title">
                                                         <h3 class="title">{{$new->caption_nepali}}</h3>
                                                     </div>
@@ -46,7 +46,7 @@
                                     @if($key>=4 && $key<=7)
                                     <div class="normal-news-list">
                                         <a href="{{route('singlepage',$new->nav_name)}}">
-                                            <figure><img src="{{$new->banner_image}}" alt=""></figure>
+                                            <figure><img src="/websites/images/news-1.jpg" alt=""></figure>
                                             <div class="abs-title">
                                                 <h3 class="title">{{$new->caption_nepali}}</h3>
                                             </div>
@@ -100,6 +100,7 @@
 
 
                     </div>
+
                 </div>
                 <aside class="col-md-3 col-sm-3 sidebar">
                     <div class="side-links">
