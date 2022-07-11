@@ -79,6 +79,9 @@ Route::prefix('admin')->group(function(){
 
 });
 
+//Route::GET('/newsajax_home',[HomeController::class,'NewsAjax'])->name('homeNews');
+//Route::get('/newsajax_ajax_home',[HomeController::class,'getRelationNewsAjax'])->name('relationnews');
+
 Route::get('/{slug}',[HomeController::class,'category'])->name('category');
 Route::get('/page/{slug}',[HomeController::class,'singlePage'])->name('singlepage');
 // Route::any('{alias}', [

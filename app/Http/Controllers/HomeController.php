@@ -45,4 +45,12 @@ class HomeController extends Controller
         $singleNews =  Navigation::all()->where('nav_name',$slug)->first();
         return view("website.single")->with(['singlenews'=>$singleNews,'menus'=>$menus,'homenews'=>$homenews,'top_first_news'=>$top_first_news]);
     }
+      public function NewsAjax(){
+        $menus = Navigation::all()->where('nav_category','Main')->where('parent_page_id',0);
+        return $menus;
+    }
+    public function getRelationNewsAjax(Request $req){
+        $id = $req['id'];
+        return Navigation::all()->where('page_type','Normal')->where('parent_page_id',$id);
+    }
 }
