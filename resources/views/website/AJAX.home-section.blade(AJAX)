@@ -182,22 +182,24 @@
                                            else{
                                                data = data+' class="col-md-4 col-sm-12">'
                                            }
-                                           data = data + ' <div class="main-news-list"><a href="page.html"><figure><img src="/websites/images/testimonial-1.png" alt=""></figure><div class="abs-title"><h3 class="title">पर्सा र बारामा थप ३५ जनामा कोरोना संक्रमणपुष्टि</h3></div></a></div></div>'
-                                           console.log(index1)
+                                           data = data + ' <div class="main-news-list"><a href="page.html"><figure><img src="/websites/images/news-1.jpg" alt=""></figure><div class="abs-title"><h3 class="title">पर्सा र बारामा थप ३५ जनामा कोरोना संक्रमणपुष्टि'+value["id"]+'</h3></div></a></div></div>'
+                                        //    console.log(index1)
                                           // console.log(data)
                                            index1++
                                         }
                                         data = data+'</div></div>'
                                         data = data + ' <div class="col-md-5 col-sm-12 ">'
+                                        var index2=0
                                         $.each( news, function( key, val ) {
-                                          if(key>=4 && key<=7){
-                                                data = data+'<div class="normal-news-list"><a href="page.html"><figure><img src="/websites/images/testimonial-1.png" alt=""></figure><div class="abs-title"><h3 class="title">पर्सा र बारामा थप ३५ जनामा कोरोना संक्रमण पुष्टि</h3></div></a></div>'
+                                          if(index2>=4 && index2<=7){
+                                                data = data+'<div class="normal-news-list"><a href="page.html"><figure><img src="/websites/images/news-1.jpg" alt=""></figure><div class="abs-title"><h3 class="title">पर्सा र बारामा थप ३५ जनामा कोरोना संक्रमण पुष्टि' +val["id"]+'key'+key+ '</h3></div></a></div>'
                                              }
+                                            index2++
                                         });
                                         data = data + '</div>'
                                         data = data + '</div></div></div>'
                                         $("#home_news").append(data)
-                                        console.log(data)                                       
+                                        // console.log(data)                                       
                                     }
                                 });
                                 
